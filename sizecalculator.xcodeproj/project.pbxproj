@@ -1,0 +1,465 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2136F09422E0A45B0064BC90 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2136F09322E0A45B0064BC90 /* AppDelegate.swift */; };
+		2136F09B22E0A45D0064BC90 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2136F09A22E0A45D0064BC90 /* Assets.xcassets */; };
+		2136F09E22E0A45D0064BC90 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2136F09C22E0A45D0064BC90 /* LaunchScreen.storyboard */; };
+		2136F0A822E0A54B0064BC90 /* SizeCalculatorVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2136F0A722E0A54B0064BC90 /* SizeCalculatorVC.swift */; };
+		2136F0AA22E0A5650064BC90 /* SizeCalculatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2136F0A922E0A5650064BC90 /* SizeCalculatorView.swift */; };
+		2136F0AD22E0A7880064BC90 /* UIImage+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2136F0AC22E0A7880064BC90 /* UIImage+Ext.swift */; };
+		2136F0AF22E0B1D40064BC90 /* SizeCalculatorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2136F0AE22E0B1D40064BC90 /* SizeCalculatorViewModel.swift */; };
+		2136F0B522E0DA350064BC90 /* Size.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2136F0B422E0DA350064BC90 /* Size.swift */; };
+		2136F0B722E0DDA00064BC90 /* UIViewController+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2136F0B622E0DDA00064BC90 /* UIViewController+Ext.swift */; };
+		2136F0B922E0E1110064BC90 /* BodyMeasurement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2136F0B822E0E1110064BC90 /* BodyMeasurement.swift */; };
+		2136F0BB22E0E1730064BC90 /* MeasurementInputType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2136F0BA22E0E1730064BC90 /* MeasurementInputType.swift */; };
+		2136F0BD22E0E2A50064BC90 /* UIButton+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2136F0BC22E0E2A50064BC90 /* UIButton+Ext.swift */; };
+		B128E87E22E895E100D6EF22 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = B128E87D22E895E100D6EF22 /* Category.swift */; };
+		F004BCD356DC06FFD77D4476 /* Pods_sizecalculator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC9B5058CC6DB25C5D8CF909 /* Pods_sizecalculator.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2136F09022E0A45B0064BC90 /* sizecalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sizecalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2136F09322E0A45B0064BC90 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2136F09A22E0A45D0064BC90 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2136F09D22E0A45D0064BC90 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2136F09F22E0A45D0064BC90 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2136F0A722E0A54B0064BC90 /* SizeCalculatorVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SizeCalculatorVC.swift; sourceTree = "<group>"; };
+		2136F0A922E0A5650064BC90 /* SizeCalculatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SizeCalculatorView.swift; sourceTree = "<group>"; };
+		2136F0AC22E0A7880064BC90 /* UIImage+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Ext.swift"; sourceTree = "<group>"; };
+		2136F0AE22E0B1D40064BC90 /* SizeCalculatorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SizeCalculatorViewModel.swift; sourceTree = "<group>"; };
+		2136F0B422E0DA350064BC90 /* Size.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Size.swift; sourceTree = "<group>"; };
+		2136F0B622E0DDA00064BC90 /* UIViewController+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Ext.swift"; sourceTree = "<group>"; };
+		2136F0B822E0E1110064BC90 /* BodyMeasurement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyMeasurement.swift; sourceTree = "<group>"; };
+		2136F0BA22E0E1730064BC90 /* MeasurementInputType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeasurementInputType.swift; sourceTree = "<group>"; };
+		2136F0BC22E0E2A50064BC90 /* UIButton+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Ext.swift"; sourceTree = "<group>"; };
+		B128E87D22E895E100D6EF22 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		BA7A1B296E721D8311A419D1 /* Pods-sizecalculator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sizecalculator.debug.xcconfig"; path = "Target Support Files/Pods-sizecalculator/Pods-sizecalculator.debug.xcconfig"; sourceTree = "<group>"; };
+		EB8F9BA4A1DDE71B3E7A215E /* Pods-sizecalculator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sizecalculator.release.xcconfig"; path = "Target Support Files/Pods-sizecalculator/Pods-sizecalculator.release.xcconfig"; sourceTree = "<group>"; };
+		EC9B5058CC6DB25C5D8CF909 /* Pods_sizecalculator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_sizecalculator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2136F08D22E0A45B0064BC90 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F004BCD356DC06FFD77D4476 /* Pods_sizecalculator.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2136F08722E0A45B0064BC90 = {
+			isa = PBXGroup;
+			children = (
+				2136F09222E0A45B0064BC90 /* sizecalculator */,
+				2136F09122E0A45B0064BC90 /* Products */,
+				B3D77C096130EE210C6D9F6F /* Pods */,
+				E7A71424C7080A1E426926FE /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		2136F09122E0A45B0064BC90 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2136F09022E0A45B0064BC90 /* sizecalculator.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2136F09222E0A45B0064BC90 /* sizecalculator */ = {
+			isa = PBXGroup;
+			children = (
+				2136F0B322E0DA2B0064BC90 /* Model */,
+				2136F0A522E0A52B0064BC90 /* Story */,
+				2136F0AB22E0A76D0064BC90 /* Extensions */,
+				2136F09322E0A45B0064BC90 /* AppDelegate.swift */,
+				2136F09A22E0A45D0064BC90 /* Assets.xcassets */,
+				2136F09C22E0A45D0064BC90 /* LaunchScreen.storyboard */,
+				2136F09F22E0A45D0064BC90 /* Info.plist */,
+			);
+			path = sizecalculator;
+			sourceTree = "<group>";
+		};
+		2136F0A522E0A52B0064BC90 /* Story */ = {
+			isa = PBXGroup;
+			children = (
+				2136F0A622E0A5380064BC90 /* Calculator */,
+			);
+			path = Story;
+			sourceTree = "<group>";
+		};
+		2136F0A622E0A5380064BC90 /* Calculator */ = {
+			isa = PBXGroup;
+			children = (
+				2136F0A722E0A54B0064BC90 /* SizeCalculatorVC.swift */,
+				2136F0A922E0A5650064BC90 /* SizeCalculatorView.swift */,
+				2136F0AE22E0B1D40064BC90 /* SizeCalculatorViewModel.swift */,
+			);
+			path = Calculator;
+			sourceTree = "<group>";
+		};
+		2136F0AB22E0A76D0064BC90 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				2136F0AC22E0A7880064BC90 /* UIImage+Ext.swift */,
+				2136F0B622E0DDA00064BC90 /* UIViewController+Ext.swift */,
+				2136F0BC22E0E2A50064BC90 /* UIButton+Ext.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		2136F0B322E0DA2B0064BC90 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2136F0B422E0DA350064BC90 /* Size.swift */,
+				B128E87D22E895E100D6EF22 /* Category.swift */,
+				2136F0B822E0E1110064BC90 /* BodyMeasurement.swift */,
+				2136F0BA22E0E1730064BC90 /* MeasurementInputType.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B3D77C096130EE210C6D9F6F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BA7A1B296E721D8311A419D1 /* Pods-sizecalculator.debug.xcconfig */,
+				EB8F9BA4A1DDE71B3E7A215E /* Pods-sizecalculator.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		E7A71424C7080A1E426926FE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EC9B5058CC6DB25C5D8CF909 /* Pods_sizecalculator.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2136F08F22E0A45B0064BC90 /* sizecalculator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2136F0A222E0A45D0064BC90 /* Build configuration list for PBXNativeTarget "sizecalculator" */;
+			buildPhases = (
+				CBF6EB052BB0A2894DB01440 /* [CP] Check Pods Manifest.lock */,
+				2136F08C22E0A45B0064BC90 /* Sources */,
+				2136F08D22E0A45B0064BC90 /* Frameworks */,
+				2136F08E22E0A45B0064BC90 /* Resources */,
+				2020C089723FF7CF31110B70 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = sizecalculator;
+			productName = sizecalculator;
+			productReference = 2136F09022E0A45B0064BC90 /* sizecalculator.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2136F08822E0A45B0064BC90 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = ANODA;
+				TargetAttributes = {
+					2136F08F22E0A45B0064BC90 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 2136F08B22E0A45B0064BC90 /* Build configuration list for PBXProject "sizecalculator" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2136F08722E0A45B0064BC90;
+			productRefGroup = 2136F09122E0A45B0064BC90 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2136F08F22E0A45B0064BC90 /* sizecalculator */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2136F08E22E0A45B0064BC90 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2136F09E22E0A45D0064BC90 /* LaunchScreen.storyboard in Resources */,
+				2136F09B22E0A45D0064BC90 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2020C089723FF7CF31110B70 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-sizecalculator/Pods-sizecalculator-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-sizecalculator/Pods-sizecalculator-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-sizecalculator/Pods-sizecalculator-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CBF6EB052BB0A2894DB01440 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-sizecalculator-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2136F08C22E0A45B0064BC90 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2136F0A822E0A54B0064BC90 /* SizeCalculatorVC.swift in Sources */,
+				2136F0BB22E0E1730064BC90 /* MeasurementInputType.swift in Sources */,
+				2136F0B922E0E1110064BC90 /* BodyMeasurement.swift in Sources */,
+				2136F0B522E0DA350064BC90 /* Size.swift in Sources */,
+				2136F0AF22E0B1D40064BC90 /* SizeCalculatorViewModel.swift in Sources */,
+				2136F0BD22E0E2A50064BC90 /* UIButton+Ext.swift in Sources */,
+				2136F0AD22E0A7880064BC90 /* UIImage+Ext.swift in Sources */,
+				B128E87E22E895E100D6EF22 /* Category.swift in Sources */,
+				2136F09422E0A45B0064BC90 /* AppDelegate.swift in Sources */,
+				2136F0B722E0DDA00064BC90 /* UIViewController+Ext.swift in Sources */,
+				2136F0AA22E0A5650064BC90 /* SizeCalculatorView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		2136F09C22E0A45D0064BC90 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2136F09D22E0A45D0064BC90 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2136F0A022E0A45D0064BC90 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2136F0A122E0A45D0064BC90 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2136F0A322E0A45D0064BC90 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BA7A1B296E721D8311A419D1 /* Pods-sizecalculator.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = sizecalculator/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = mobi.anoda.sizecalculator;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2136F0A422E0A45D0064BC90 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EB8F9BA4A1DDE71B3E7A215E /* Pods-sizecalculator.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = sizecalculator/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = mobi.anoda.sizecalculator;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2136F08B22E0A45B0064BC90 /* Build configuration list for PBXProject "sizecalculator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2136F0A022E0A45D0064BC90 /* Debug */,
+				2136F0A122E0A45D0064BC90 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2136F0A222E0A45D0064BC90 /* Build configuration list for PBXNativeTarget "sizecalculator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2136F0A322E0A45D0064BC90 /* Debug */,
+				2136F0A422E0A45D0064BC90 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2136F08822E0A45B0064BC90 /* Project object */;
+}
