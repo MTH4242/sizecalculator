@@ -20,6 +20,9 @@
 		2136F0BB22E0E1730064BC90 /* MeasurementInputType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2136F0BA22E0E1730064BC90 /* MeasurementInputType.swift */; };
 		2136F0BD22E0E2A50064BC90 /* UIButton+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2136F0BC22E0E2A50064BC90 /* UIButton+Ext.swift */; };
 		B128E87E22E895E100D6EF22 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = B128E87D22E895E100D6EF22 /* Category.swift */; };
+		B128E88122E8B5A300D6EF22 /* AvailableDressesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B128E88022E8B5A300D6EF22 /* AvailableDressesVC.swift */; };
+		B128E88322E8B5BE00D6EF22 /* AvailableDressesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B128E88222E8B5BE00D6EF22 /* AvailableDressesView.swift */; };
+		B128E88622E8D08400D6EF22 /* dresses.json in Resources */ = {isa = PBXBuildFile; fileRef = B128E88522E8D08400D6EF22 /* dresses.json */; };
 		F004BCD356DC06FFD77D4476 /* Pods_sizecalculator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC9B5058CC6DB25C5D8CF909 /* Pods_sizecalculator.framework */; };
 /* End PBXBuildFile section */
 
@@ -39,6 +42,9 @@
 		2136F0BA22E0E1730064BC90 /* MeasurementInputType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeasurementInputType.swift; sourceTree = "<group>"; };
 		2136F0BC22E0E2A50064BC90 /* UIButton+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Ext.swift"; sourceTree = "<group>"; };
 		B128E87D22E895E100D6EF22 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		B128E88022E8B5A300D6EF22 /* AvailableDressesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvailableDressesVC.swift; sourceTree = "<group>"; };
+		B128E88222E8B5BE00D6EF22 /* AvailableDressesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvailableDressesView.swift; sourceTree = "<group>"; };
+		B128E88522E8D08400D6EF22 /* dresses.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = dresses.json; sourceTree = "<group>"; };
 		BA7A1B296E721D8311A419D1 /* Pods-sizecalculator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sizecalculator.debug.xcconfig"; path = "Target Support Files/Pods-sizecalculator/Pods-sizecalculator.debug.xcconfig"; sourceTree = "<group>"; };
 		EB8F9BA4A1DDE71B3E7A215E /* Pods-sizecalculator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sizecalculator.release.xcconfig"; path = "Target Support Files/Pods-sizecalculator/Pods-sizecalculator.release.xcconfig"; sourceTree = "<group>"; };
 		EC9B5058CC6DB25C5D8CF909 /* Pods_sizecalculator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_sizecalculator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -83,6 +89,7 @@
 				2136F09322E0A45B0064BC90 /* AppDelegate.swift */,
 				2136F09A22E0A45D0064BC90 /* Assets.xcassets */,
 				2136F09C22E0A45D0064BC90 /* LaunchScreen.storyboard */,
+				B128E88422E8CED200D6EF22 /* Resources */,
 				2136F09F22E0A45D0064BC90 /* Info.plist */,
 			);
 			path = sizecalculator;
@@ -91,6 +98,7 @@
 		2136F0A522E0A52B0064BC90 /* Story */ = {
 			isa = PBXGroup;
 			children = (
+				B128E87F22E8B55200D6EF22 /* AvailableDresses */,
 				2136F0A622E0A5380064BC90 /* Calculator */,
 			);
 			path = Story;
@@ -125,6 +133,23 @@
 				2136F0BA22E0E1730064BC90 /* MeasurementInputType.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		B128E87F22E8B55200D6EF22 /* AvailableDresses */ = {
+			isa = PBXGroup;
+			children = (
+				B128E88022E8B5A300D6EF22 /* AvailableDressesVC.swift */,
+				B128E88222E8B5BE00D6EF22 /* AvailableDressesView.swift */,
+			);
+			path = AvailableDresses;
+			sourceTree = "<group>";
+		};
+		B128E88422E8CED200D6EF22 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B128E88522E8D08400D6EF22 /* dresses.json */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		B3D77C096130EE210C6D9F6F /* Pods */ = {
@@ -204,6 +229,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B128E88622E8D08400D6EF22 /* dresses.json in Resources */,
 				2136F09E22E0A45D0064BC90 /* LaunchScreen.storyboard in Resources */,
 				2136F09B22E0A45D0064BC90 /* Assets.xcassets in Resources */,
 			);
@@ -264,11 +290,13 @@
 				2136F0B522E0DA350064BC90 /* Size.swift in Sources */,
 				2136F0AF22E0B1D40064BC90 /* SizeCalculatorViewModel.swift in Sources */,
 				2136F0BD22E0E2A50064BC90 /* UIButton+Ext.swift in Sources */,
+				B128E88122E8B5A300D6EF22 /* AvailableDressesVC.swift in Sources */,
 				2136F0AD22E0A7880064BC90 /* UIImage+Ext.swift in Sources */,
 				B128E87E22E895E100D6EF22 /* Category.swift in Sources */,
 				2136F09422E0A45B0064BC90 /* AppDelegate.swift in Sources */,
 				2136F0B722E0DDA00064BC90 /* UIViewController+Ext.swift in Sources */,
 				2136F0AA22E0A5650064BC90 /* SizeCalculatorView.swift in Sources */,
+				B128E88322E8B5BE00D6EF22 /* AvailableDressesView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

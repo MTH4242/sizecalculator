@@ -14,6 +14,7 @@ import DropDown
 protocol SizeCalculatorViewDelegate: class {
     func didSelectUnit(_ unit: UnitLength)
     func didTapCalculate()
+    func didTapShowAvailableDresses()
 }
 
 final class SizeCalculatorView: UIView {
@@ -165,6 +166,9 @@ final class SizeCalculatorView: UIView {
         addSubview(showDressesButton)
         showDressesButton.setTitle("Show Available Dresses", for: .normal)
         showDressesButton.isHidden = true
+        showDressesButton.onTap { [weak self] in
+            self?.delegate?.didTapShowAvailableDresses()
+        }
         showDressesButton.snp.makeConstraints {
             $0.top.equalTo(calculateButton.snp.bottom).offset(20)
             $0.centerX.equalToSuperview()

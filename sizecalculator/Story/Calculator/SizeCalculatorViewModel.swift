@@ -22,6 +22,8 @@ enum CalculatorError: LocalizedError {
 final class SizeCalculatorViewModel {
     var unit = UnitLength.centimeters
     
+    var currentSize: Size?
+    
     private func validate(measurement: BodyMeasurement) throws {
         guard MeasurementInputType.validateValue(measurement.bust, for: .bust, in: unit) else {
             throw CalculatorError.invalidValue(.bust, unit)

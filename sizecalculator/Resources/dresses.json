@@ -1,0 +1,72 @@
+[
+    {
+        "category": "evening",
+        "size": 5,
+        "color": "red",
+        "name": "Red Evening Dress",
+        "status": "inStock"
+    },
+    {
+        "category": "evening",
+        "size": 6,
+        "color": "green",
+        "name": "Green Evening Dress",
+        "status": "inProduction"
+    },
+    {
+        "category": "evening",
+        "size": 2,
+        "color": "red",
+        "name": "Red Evening Dress",
+        "status": "forwardOrder"
+    },
+    {
+        "category": "evening",
+        "size": 4,
+        "color": "blue",
+        "name": "Blue Evening Dress",
+        "status": "inStock"
+    },
+    {
+        "category": "evening",
+        "size": 7,
+        "color": "green",
+        "name": "Green Evening Dress",
+        "status": "inStock"
+    },
+    {
+        "category": "bridal",
+        "size": 10,
+        "color": "black",
+        "name": "Black Evening Dress",
+        "status": "inStock"
+    },
+    {
+        "category": "evening",
+        "size": 6,
+        "color": "red",
+        "name": "Red Evening Dress",
+        "status": "inStock"
+    },
+    {
+        "category": "cocktail",
+        "size": 4,
+        "color": "black",
+        "name": "Black Cocktail Dress",
+        "status": "inStock"
+    },
+    {
+        "category": "bridal",
+        "size": 8,
+        "color": "green",
+        "name": "Green Bridal Dress",
+        "status": "inStock"
+    },
+    {
+        "category": "evening",
+        "size": 5,
+        "color": "red",
+        "name": "Red Evening Dress",
+        "status": "inStock"
+    }
+]

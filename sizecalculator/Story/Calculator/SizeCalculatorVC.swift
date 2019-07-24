@@ -34,9 +34,15 @@ extension SizeCalculatorVC: SizeCalculatorViewDelegate {
         let measurement = BodyMeasurement(bust: contentView.bust, waist: contentView.waist, hips: contentView.hips)
         do {
             let size = try viewModel.calculateSize(for: measurement)
+            viewModel.currentSize = size
             contentView.updateResults(size: size)
         } catch {
             showErrorAlert(title: error.localizedDescription)
         }
+    }
+    
+    func didTapShowAvailableDresses() {
+        guard let size = viewModel.currentSize else { return }
+        navigationController?.pushViewController(AvailableDressesVC(size: size), animated: true)
     }
 }

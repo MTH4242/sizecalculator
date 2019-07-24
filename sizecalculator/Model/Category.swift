@@ -11,7 +11,7 @@ import UIKit
 
 struct Dress {
     
-    enum Category: CaseIterable {
+    enum Category: String, Codable, CaseIterable {
         case evening
         case prom
         case bridesmaids
@@ -40,14 +40,26 @@ struct Dress {
         }
     }
     
-    enum Status {
+    enum Status: String, Codable {
         case inStock
         case inProduction
         case forwardOrder
     }
     
+    enum Color: String, Codable {
+        case red
+        case green
+        case blue
+        case black
+        case orange
+        case pink
+    }
+    
     let category: Category
     let size: Size
-    let color: UIColor
+    let color: Color
+    let name: String
     let status: Status
 }
+
+extension Dress: Codable { }
