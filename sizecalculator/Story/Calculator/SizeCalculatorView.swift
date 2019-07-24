@@ -20,6 +20,7 @@ final class SizeCalculatorView: UIView {
     private let centimetersButton = UIButton.selectionStyled
     private let inchesButton = UIButton.selectionStyled
     private let calculateButton = UIButton()
+    private let showDressesButton = UIButton(type: .system)
     
     private let categoryButton = UIButton(type: .system)
     private let categoryDropDown = DropDown()
@@ -123,11 +124,10 @@ final class SizeCalculatorView: UIView {
             $0.top.equalTo(containerView.snp.bottom).offset(40)
             $0.leading.equalToSuperview().offset(20)
             $0.width.equalToSuperview().multipliedBy(0.5)
-//            $0.centerX.equalToSuperview()
         }
         
         addSubview(categoryButton)
-        categoryButton.setTitle(Category.evening.name, for: .normal)
+        categoryButton.setTitle(Dress.Category.evening.name, for: .normal)
         categoryButton.onTap { [weak self] in
             self?.categoryDropDown.show()
         }
@@ -138,7 +138,7 @@ final class SizeCalculatorView: UIView {
         }
         
         categoryDropDown.anchorView = categoryButton
-        categoryDropDown.dataSource = Category.allCases.map { $0.name }
+        categoryDropDown.dataSource = Dress.Category.allCases.map { $0.name }
         categoryDropDown.selectionAction = { [weak self] (index, item) in
             self?.categoryButton.setTitle(item, for: .normal)
         }
@@ -162,11 +162,19 @@ final class SizeCalculatorView: UIView {
             $0.leading.equalTo(safeAreaLayoutGuide).offset(20)
         }
         
+        addSubview(showDressesButton)
+        showDressesButton.setTitle("Show Available Dresses", for: .normal)
+        showDressesButton.isHidden = true
+        showDressesButton.snp.makeConstraints {
+            $0.top.equalTo(calculateButton.snp.bottom).offset(20)
+            $0.centerX.equalToSuperview()
+        }
+        
         addSubview(textView)
         textView.isEditable = false
         textView.font = UIFont.boldSystemFont(ofSize: 20)
         textView.snp.makeConstraints {
-            $0.top.equalTo(calculateButton.snp.bottom).offset(20)
+            $0.top.equalTo(showDressesButton.snp.bottom).offset(20)
             $0.leading.bottom.trailing.equalTo(safeAreaLayoutGuide).inset(20)
         }
     }
@@ -178,5 +186,6 @@ final class SizeCalculatorView: UIView {
             Your EU Size is: \(size.EU)
             Your US Size is: \(size.US)
         """
+        showDressesButton.isHidden = false
     }
 }
