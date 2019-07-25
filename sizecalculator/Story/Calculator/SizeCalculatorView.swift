@@ -143,7 +143,7 @@ final class SizeCalculatorView: UIView {
         categoryDropDown.dataSource = Dress.Category.allCases.map { $0.name }
         categoryDropDown.selectionAction = { [weak self] (index, item) in
             self?.categoryButton.setTitle(item, for: .normal)
-            guard let category = Dress.Category.init(rawValue: item) else { return }
+            guard let category = Dress.Category(name: item) else { return }
             self?.delegate?.didChangeCategory(category)
         }
         

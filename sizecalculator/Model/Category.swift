@@ -38,6 +38,12 @@ struct Dress {
                 return "Cocktail Dress"
             }
         }
+        
+        init?(name: String) {
+            let category = Category.allCases.first { $0.name == name }
+            guard let cat = category else { return nil }
+            self = cat
+        }
     }
     
     enum Status: String, Codable {
