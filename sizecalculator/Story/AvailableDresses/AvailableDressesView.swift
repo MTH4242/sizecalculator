@@ -9,6 +9,9 @@
 import UIKit
 
 class AvailableDressesView: UIView {
+    
+    let tableView = UITableView()
+    
 
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -20,8 +23,11 @@ class AvailableDressesView: UIView {
     }
     
     private func setupLayout() {
-        backgroundColor = .red
-        
+        backgroundColor = .white
+        addSubview(tableView)
+        tableView.rowHeight = 80
+        tableView.snp.makeConstraints {
+            $0.edges.equalToSuperview()
+        }
     }
-
 }

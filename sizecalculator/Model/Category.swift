@@ -52,7 +52,7 @@ struct Dress {
         case blue
         case black
         case orange
-        case pink
+        case purple
     }
     
     let category: Category

@@ -254,4 +254,22 @@ enum Size: Int, Codable, CaseIterable {
             return "8XL"
         }
     }
+    
+    var displayName: String {
+        return Size.displayName(forSize: self) ?? self.name
+    }
+    
+    static private func displayName(forSize size: Size) -> String? {
+        guard let currentLocale = Locale.current.regionCode else { return nil }
+        switch currentLocale {
+        case "GB":
+            return "\(size.UK)"
+        case "US":
+            return "\(size.US)"
+        case "DE", "FR", "SP", "IT":
+            return "\(size.EU)"
+        default:
+            return size.name
+        }
+    }
 }

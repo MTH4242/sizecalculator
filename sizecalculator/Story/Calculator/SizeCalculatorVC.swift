@@ -43,6 +43,11 @@ extension SizeCalculatorVC: SizeCalculatorViewDelegate {
     
     func didTapShowAvailableDresses() {
         guard let size = viewModel.currentSize else { return }
-        navigationController?.pushViewController(AvailableDressesVC(size: size), animated: true)
+        let category = viewModel.currentCategory
+        navigationController?.pushViewController(AvailableDressesVC(size: size, category: category), animated: true)
+    }
+    
+    func didChangeCategory(_ category: Dress.Category) {
+        viewModel.currentCategory = category
     }
 }

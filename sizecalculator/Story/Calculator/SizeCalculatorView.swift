@@ -15,6 +15,7 @@ protocol SizeCalculatorViewDelegate: class {
     func didSelectUnit(_ unit: UnitLength)
     func didTapCalculate()
     func didTapShowAvailableDresses()
+    func didChangeCategory(_ category: Dress.Category)
 }
 
 final class SizeCalculatorView: UIView {
@@ -142,6 +143,8 @@ final class SizeCalculatorView: UIView {
         categoryDropDown.dataSource = Dress.Category.allCases.map { $0.name }
         categoryDropDown.selectionAction = { [weak self] (index, item) in
             self?.categoryButton.setTitle(item, for: .normal)
+            guard let category = Dress.Category.init(rawValue: item) else { return }
+            self?.delegate?.didChangeCategory(category)
         }
         
         addSubview(calculateButton)
