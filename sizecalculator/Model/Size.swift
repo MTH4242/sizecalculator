@@ -8,7 +8,7 @@
 
 import Foundation
 
-enum Size: Int, Codable, CaseIterable {
+enum Size: Int, CaseIterable {
     case XXXS
     case XXS
     case XS
@@ -273,3 +273,5 @@ enum Size: Int, Codable, CaseIterable {
         }
     }
 }
+
+extension Size: Codable { }

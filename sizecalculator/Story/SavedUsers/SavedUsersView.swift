@@ -1,17 +1,17 @@
 //
-//  AvailableDressesView.swift
+//  SavedUsersView.swift
 //  sizecalculator
 //
-//  Created by Simon Kostenko on 7/24/19.
+//  Created by Simon Kostenko on 7/25/19.
 //  Copyright © 2019 ANODA. All rights reserved.
 //
 
 import UIKit
 
-class AvailableDressesView: UIView {
+class SavedUsersView: UIView {
     
     let tableView = UITableView()
-
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         setupLayout()
@@ -25,7 +25,6 @@ class AvailableDressesView: UIView {
         backgroundColor = .white
         addSubview(tableView)
         tableView.rowHeight = 80
-        tableView.allowsSelection = false
         tableView.snp.makeConstraints {
             $0.edges.equalToSuperview()
         }

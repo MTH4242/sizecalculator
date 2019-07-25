@@ -16,6 +16,8 @@ protocol SizeCalculatorViewDelegate: class {
     func didTapCalculate()
     func didTapShowAvailableDresses()
     func didChangeCategory(_ category: Dress.Category)
+    func didTapShowUsers()
+    func didTapSaveUsername()
 }
 
 final class SizeCalculatorView: UIView {
@@ -27,13 +29,15 @@ final class SizeCalculatorView: UIView {
     private let categoryButton = UIButton(type: .system)
     private let categoryDropDown = DropDown()
     
-    private let bustTextField = UITextField()
-    private let waistTextField = UITextField()
-    private let hipTextField = UITextField()
+    private let showUsersButton = UIButton(type: .system)
+    private let saveUsernameButton = UIButton(type: .system)
     
-    private let usernameTextField = UITextField()
+    let bustTextField = UITextField()
+    let waistTextField = UITextField()
+    let hipTextField = UITextField()
+    let usernameTextField = UITextField()
     
-    private let textView = UITextView()
+    let textView = UITextView()
     
     var bust: Double {
         let text = bustTextField.text ?? ""
@@ -145,6 +149,29 @@ final class SizeCalculatorView: UIView {
             self?.categoryButton.setTitle(item, for: .normal)
             guard let category = Dress.Category(name: item) else { return }
             self?.delegate?.didChangeCategory(category)
+        }
+        
+        addSubview(showUsersButton)
+        showUsersButton.setTitle("Show Users", for: .normal)
+        showUsersButton.onTap { [weak self] in
+            self?.delegate?.didTapShowUsers()
+        }
+        showUsersButton.snp.makeConstraints {
+            $0.leading.equalTo(stackView.snp.trailing).offset(20)
+            $0.trailing.equalToSuperview().offset(20)
+            $0.top.equalTo(categoryButton.snp.bottom).offset(16)
+        }
+        
+        addSubview(saveUsernameButton)
+        saveUsernameButton.setTitle("Save Size for User", for: .normal)
+        saveUsernameButton.onTap { [weak self] in
+            self?.delegate?.didTapSaveUsername()
+        }
+        
+        saveUsernameButton.snp.makeConstraints {
+            $0.leading.equalTo(stackView.snp.trailing).offset(20)
+            $0.trailing.equalToSuperview().offset(20)
+            $0.top.equalTo(showUsersButton.snp.bottom).offset(16)
         }
         
         addSubview(calculateButton)

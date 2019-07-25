@@ -24,6 +24,8 @@
 		B128E88322E8B5BE00D6EF22 /* AvailableDressesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B128E88222E8B5BE00D6EF22 /* AvailableDressesView.swift */; };
 		B128E88622E8D08400D6EF22 /* dresses.json in Resources */ = {isa = PBXBuildFile; fileRef = B128E88522E8D08400D6EF22 /* dresses.json */; };
 		B128E88822E8E0F000D6EF22 /* DressCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B128E88722E8E0F000D6EF22 /* DressCell.swift */; };
+		B16CE24722E9CA2400BE2DEC /* SavedUsersVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B16CE24622E9CA2400BE2DEC /* SavedUsersVC.swift */; };
+		B16CE24922E9CA3C00BE2DEC /* SavedUsersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B16CE24822E9CA3C00BE2DEC /* SavedUsersView.swift */; };
 		F004BCD356DC06FFD77D4476 /* Pods_sizecalculator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC9B5058CC6DB25C5D8CF909 /* Pods_sizecalculator.framework */; };
 /* End PBXBuildFile section */
 
@@ -47,6 +49,8 @@
 		B128E88222E8B5BE00D6EF22 /* AvailableDressesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvailableDressesView.swift; sourceTree = "<group>"; };
 		B128E88522E8D08400D6EF22 /* dresses.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = dresses.json; sourceTree = "<group>"; };
 		B128E88722E8E0F000D6EF22 /* DressCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DressCell.swift; sourceTree = "<group>"; };
+		B16CE24622E9CA2400BE2DEC /* SavedUsersVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedUsersVC.swift; sourceTree = "<group>"; };
+		B16CE24822E9CA3C00BE2DEC /* SavedUsersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedUsersView.swift; sourceTree = "<group>"; };
 		BA7A1B296E721D8311A419D1 /* Pods-sizecalculator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sizecalculator.debug.xcconfig"; path = "Target Support Files/Pods-sizecalculator/Pods-sizecalculator.debug.xcconfig"; sourceTree = "<group>"; };
 		EB8F9BA4A1DDE71B3E7A215E /* Pods-sizecalculator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-sizecalculator.release.xcconfig"; path = "Target Support Files/Pods-sizecalculator/Pods-sizecalculator.release.xcconfig"; sourceTree = "<group>"; };
 		EC9B5058CC6DB25C5D8CF909 /* Pods_sizecalculator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_sizecalculator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -100,6 +104,7 @@
 		2136F0A522E0A52B0064BC90 /* Story */ = {
 			isa = PBXGroup;
 			children = (
+				B16CE24522E9CA0C00BE2DEC /* SavedUsers */,
 				B128E87F22E8B55200D6EF22 /* AvailableDresses */,
 				2136F0A622E0A5380064BC90 /* Calculator */,
 			);
@@ -153,6 +158,15 @@
 				B128E88522E8D08400D6EF22 /* dresses.json */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		B16CE24522E9CA0C00BE2DEC /* SavedUsers */ = {
+			isa = PBXGroup;
+			children = (
+				B16CE24622E9CA2400BE2DEC /* SavedUsersVC.swift */,
+				B16CE24822E9CA3C00BE2DEC /* SavedUsersView.swift */,
+			);
+			path = SavedUsers;
 			sourceTree = "<group>";
 		};
 		B3D77C096130EE210C6D9F6F /* Pods */ = {
@@ -301,6 +315,8 @@
 				2136F0AA22E0A5650064BC90 /* SizeCalculatorView.swift in Sources */,
 				B128E88322E8B5BE00D6EF22 /* AvailableDressesView.swift in Sources */,
 				B128E88822E8E0F000D6EF22 /* DressCell.swift in Sources */,
+				B16CE24722E9CA2400BE2DEC /* SavedUsersVC.swift in Sources */,
+				B16CE24922E9CA3C00BE2DEC /* SavedUsersView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -440,6 +456,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BUUZARM7U5;
 				INFOPLIST_FILE = sizecalculator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -458,6 +475,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BUUZARM7U5;
 				INFOPLIST_FILE = sizecalculator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

@@ -28,6 +28,33 @@ final class SizeCalculatorVC: UIViewController {
 }
 
 extension SizeCalculatorVC: SizeCalculatorViewDelegate {
+    func didTapShowUsers() {
+        let savedUsersVC = SavedUsersVC()
+        savedUsersVC.delegate = self
+        present(UINavigationController(rootViewController: savedUsersVC), animated: true)
+    }
+    
+    func didTapSaveUsername() {
+        guard let size = viewModel.currentSize else {
+            showErrorAlert(title: "There is no size to save")
+            return
+        }
+        guard let username = contentView.usernameTextField.text else {
+            showErrorAlert(title: "Username is empty")
+            return
+        }
+        let defaults = UserDefaults.standard
+        guard var sizes = defaults.dictionary(forKey: "sizes") else {
+            let a = [username: size.rawValue]
+            defaults.set(a, forKey: "sizes")
+            defaults.synchronize()
+            return
+        }
+        sizes[username] = size.rawValue
+        defaults.set(sizes, forKey: "sizes")
+        defaults.synchronize()
+    }
+    
     func didSelectUnit(_ unit: UnitLength) {
         viewModel.unit = unit
     }
@@ -52,5 +79,15 @@ extension SizeCalculatorVC: SizeCalculatorViewDelegate {
     
     func didChangeCategory(_ category: Dress.Category) {
         viewModel.currentCategory = category
+    }
+}
+
+extension SizeCalculatorVC: SavedUsersVCDelegate {
+    func savedUsersVC(_ controller: SavedUsersVC, didSelectSavedSize size: (username: String, size: Size)) {
+        contentView.bustTextField.text = "\(size.size.bust)"
+        contentView.waistTextField.text = "\(size.size.waist)"
+        contentView.hipTextField.text = "\(size.size.hips)"
+        contentView.usernameTextField.text = "\(size.username)"
+        contentView.textView.text = ""
     }
 }
