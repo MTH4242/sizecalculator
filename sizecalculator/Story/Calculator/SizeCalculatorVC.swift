@@ -21,6 +21,9 @@ final class SizeCalculatorVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Size Calculator"
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "View Cart", style: .plain, handler: {
+            
+        })
     }
 }
 

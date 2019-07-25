@@ -8,13 +8,20 @@
 
 import UIKit
 
+protocol DressCellDelegate: class {
+    func dressCellDidAddDress(_ dressCell: DressCell)
+}
+
 class DressCell: UITableViewCell {
+    
+    weak var delegate: DressCellDelegate?
     
     static let reuseIdentifier = "\(DressCell.self)"
     
     private let colorView = UIView()
     private let nameLabel = UILabel()
     private let categoryLabel = UILabel()
+    private let addToCartButton = UIButton()
     private let sizeLabel = UILabel()
     private let statusView = UIView()
     
@@ -52,13 +59,27 @@ class DressCell: UITableViewCell {
             $0.trailing.equalTo(statusView.snp.leading).offset(-16)
         }
         
+        contentView.addSubview(addToCartButton)
+        addToCartButton.backgroundColor = .blue
+        addToCartButton.layer.cornerRadius = 20
+        addToCartButton.setTitle("Add", for: .normal)
+        addToCartButton.onTap {
+            self.delegate?.dressCellDidAddDress(self)
+        }
+        addToCartButton.snp.makeConstraints {
+            $0.height.equalTo(40)
+            $0.width.equalTo(60)
+            $0.centerY.equalToSuperview()
+            $0.trailing.equalTo(sizeLabel.snp.leading).offset(-16)
+        }
+        
         let stackView = UIStackView(arrangedSubviews: [nameLabel, categoryLabel])
         contentView.addSubview(stackView)
         stackView.axis = .vertical
         stackView.snp.makeConstraints {
             $0.leading.equalTo(colorView.snp.trailing).offset(16)
             $0.centerY.equalToSuperview()
-            $0.trailing.equalTo(statusView.snp.leading).inset(16)
+            $0.trailing.greaterThanOrEqualTo(addToCartButton.snp.leading).offset(-16).priority(.low)
         }
     }
     

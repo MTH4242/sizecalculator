@@ -17,4 +17,12 @@ extension UIViewController {
         alert.addAction(okButton)
         present(alert, animated: true)
     }
+    
+    func showAlert(title: String, message: String) {
+        if let childVC = presentedViewController, childVC is UIAlertController { return }
+        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        let okButton = UIAlertAction(title: "Ok", style: .default)
+        alert.addAction(okButton)
+        present(alert, animated: true)
+    }
 }

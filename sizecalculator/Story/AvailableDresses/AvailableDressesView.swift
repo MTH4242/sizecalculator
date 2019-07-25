@@ -26,6 +26,7 @@ class AvailableDressesView: UIView {
         backgroundColor = .white
         addSubview(tableView)
         tableView.rowHeight = 80
+        tableView.allowsSelection = false
         tableView.snp.makeConstraints {
             $0.edges.equalToSuperview()
         }

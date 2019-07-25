@@ -53,11 +53,15 @@ class AvailableDressesVC: UIViewController {
     
     private func setupNavigationBar() {
         navigationItem.title = "\(category.name), \(size.name), \(size.displayName)"
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "View Cart", style: .plain, handler: {
+            
+        })
     }
     
     private func setupTableView() {
         contentView.tableView.register(DressCell.self, forCellReuseIdentifier: DressCell.reuseIdentifier)
         contentView.tableView.dataSource = self
+        contentView.tableView.delegate = self
     }
     
     private func setupSearchController() {
@@ -94,7 +98,18 @@ extension AvailableDressesVC: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: DressCell.reuseIdentifier, for: indexPath) as! DressCell
+        cell.delegate = self
         cell.update(withDress: filteredDresses[indexPath.row])
         return cell
+    }
+}
+
+extension AvailableDressesVC: UITableViewDelegate {
+    
+}
+
+extension AvailableDressesVC: DressCellDelegate {
+    func dressCellDidAddDress(_ dressCell: DressCell) {
+        showAlert(title: "Success", message: "Dress was added to your cart!")
     }
 }
